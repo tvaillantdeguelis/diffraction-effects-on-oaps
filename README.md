@@ -5,7 +5,7 @@ diffraction image from an opaque planar object illuminated by a
 monochromatic plane wave.
 
 The function "plot_diffraction_image" allows to plot the diffracted
-image and the binary one which would result from the 2D-S measurement.
+image and the binary one which would result from the 2D-S measurement. Return *diffraction_image.png*.
 
 The main program gives an example of the use of these functions for a
 rectangular shape.
