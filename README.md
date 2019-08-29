@@ -1,6 +1,6 @@
 # diffraction-effects-on-oaps
 
-This script give a function ("compute_diffraction") which computes the 
+This script gives a function ("compute_diffraction") which computes the 
 diffraction image from an opaque planar object illuminated by a
 monochromatic plane wave.
 
