@@ -1,26 +1,33 @@
 # diffraction-effects-on-oaps
 
-This script gives a function ("compute_diffraction") which computes the 
+These scripts give a function ("compute_diffraction") which computes the 
 diffraction image from an opaque planar object illuminated by a
 monochromatic plane wave.
 
 The function "plot_diffraction_image" allows to plot the diffracted
 image and the binary one which would result from the 2D-S measurement. Return *diffraction_image.png*.
 
-The main program gives an example of the use of these functions for a
-rectangular shape.
+Instrument configuration can be set in config.py
+
+Particle shape and distance to the object plane are set in 
+particle_shape_and_distance.py
 
 Inputs
 ----------
-	- Z: distance to object plane (µm)
-	- l: wavelength (µm)
-	- pixel_size: (µm)
+In particle_shape_and_distance.py:
+	- Z: distance to object plane (in cm)
 	- M: transmittance mask (particle shape) with size (y.size, x.size)
-	- filter_fmax: (µm-1) low freq filter on FFT to remove noise (you can turn to False in the function if not needed)
-  
+	
+In config.py:
+	- l: wavelength of the monochromatic incident light (in nm)
+	- pixel_size: image resolution on which diffraction pattern is computed (in µm)
+	- x_2DSpixel_size: vertical axis (photodiode array axis) resolution (in µm)
+	- y_2DSpixel_size: horizontal axis (aircraft displacement axis) resolution (in µm)
+	
 Output
 ----------
-	- I: intensity of the diffracted light on a screen orthogonal to the incident direction at a distance Z from the object.
+	- I: intensity of the diffracted light on a screen orthogonal to the incident direction at a distance Z from the object
+	- I_2DS: theoretical binary record by the 2D-S
   
 References
 ----------
