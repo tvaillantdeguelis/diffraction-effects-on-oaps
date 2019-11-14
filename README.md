@@ -14,11 +14,11 @@ particle_shape_and_distance.py
 
 Inputs
 ----------
-In particle_shape_and_distance.py:
+	In particle_shape_and_distance.py:
 	- Z: distance to object plane (in cm)
 	- M: transmittance mask (particle shape) with size (y.size, x.size)
 	
-In config.py:
+	In config.py:
 	- l: wavelength of the monochromatic incident light (in nm)
 	- pixel_size: image resolution on which diffraction pattern is computed (in µm)
 	- x_2DSpixel_size: vertical axis (photodiode array axis) resolution (in µm)
